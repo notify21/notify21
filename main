@@ -2562,7 +2562,7 @@ spawn(function()
                 elseif _G.FastAttackDelay == "0.17" then
                     _G.FastAttackDelay = 0.17
                 elseif _G.FastAttackDelay == "0.175" then
-                    _G.FastAttackDelay = 0.175
+                    _G.FastAttackDelay = 0.174
                 elseif _G.FastAttackDelay == "0.18" then
                     _G.FastAttackDelay = 0.18
                 elseif _G.FastAttackDelay == "0.185" then
