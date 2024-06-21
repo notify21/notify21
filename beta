@@ -1,4 +1,4 @@
-local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/vinhuchi/rblx/main/FixedFluent.lua"))()
+local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/notify21/notify21/main/ui"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 if game.PlaceId == 2753915549 then
@@ -2198,7 +2198,7 @@ end
     Size = UDim2.fromOffset(480, 320),
     Acrylic = false, -- The blur may be detectable, setting this to false disables blur entirely
     Theme = "Darker",
-    Accent=Color3.fromRGB(0,255,255)
+
     MinimizeKey = Enum.KeyCode.LeftControl -- Used when theres no MinimizeKeybind
 })
 --Done
@@ -2206,18 +2206,18 @@ end
 
 
 local Tabs = {
-    About = Window: AddTab({ Title = "  Profile", Icon = "user" }),
-    Main = Window:AddTab({ Title = " Main", Icon = "home" }),
-    Qs = Window:AddTab({ Title = "Item", Icon = "arrow-up-down" }),  
-    Mt = Window:AddTab({ Title = " Material & Boss", Icon = "air-vent" }),  
-    De = Window:AddTab({ Title = "Fruit & Raid", Icon = "apple" }),    
-    St = Window:AddTab({ Title = " Status", Icon = "activity" }),  
-    Lc = Window:AddTab({ Title = " Local Player", Icon = "baby" }),  
-    RC = Window:AddTab({ Title = "Race V4", Icon = "chevrons-right" }), 
-    Se = Window:AddTab({ Title = "Sea Event", Icon = "waves" }),   
-    Sh = Window:AddTab({ Title = "Shop ", Icon = "shopping-cart" }),
-    Settings = Window:AddTab({ Title = "Setting", Icon = "settings" }),
-    Ms = Window:AddTab({ Title = " Misc", Icon = "align-vertical-distribute-center" }), 
+    About = Window: AddTab({ Title = "  Profile", Icon = "send-horizontal" }),
+    Main = Window:AddTab({ Title = " Main", Icon = "send-horizontal" }),
+    Qs = Window:AddTab({ Title = "Item", Icon = " send-horizontal" }),  
+    Mt = Window:AddTab({ Title = " Material & Boss", Icon = "send-horizontal" }),  
+    De = Window:AddTab({ Title = "Fruit & Raid", Icon = "send-horizontal "}),    
+    St = Window:AddTab({ Title = " Status", Icon = "send-horizontal" }),  
+    Lc = Window:AddTab({ Title = " Local Player", Icon = "send-horizontal" }),  
+    RC = Window:AddTab({ Title = "Race V4", Icon = "send-horizontal" }), 
+    Se = Window:AddTab({ Title = "Sea Event", Icon = "send-horizontal" }),   
+    Sh = Window:AddTab({ Title = "Shop ", Icon = "send-horizontal" }),
+    Settings = Window:AddTab({ Title = "Setting", Icon = "send-horizontal" }),
+    Ms = Window:AddTab({ Title = " Misc", Icon = "send-horizontal" }), 
 }
 
 
@@ -2667,7 +2667,7 @@ end)
 
 local Dropdown = Tabs.Settings:AddDropdown("Dropdown", {
         Title = "Bring Mode",
-        Values = {"Low", "Normal", "Fast attack"},
+        Values = {"Low", "Normal", "Super Bring"},
         Multi = false,
         Default = 1,
     })
@@ -2687,8 +2687,8 @@ spawn(function()
                     _G.BringMode = 250
                 elseif _G.BringMode == "Normal" then
                     _G.BringMode = 300
-                elseif _G.BringMode == "Fast attack" then
-                    _G.BringMode = 350
+                elseif _G.BringMode == "Super Bring" then
+                    _G.BringMode = 400
                 end
             end)
         end
